@@ -5,7 +5,11 @@ A **Firefox Add-on** that provides a soundtrack for our surveilled internet mean
 "Dark Side of the Prism" uses Pink Floyd's aural prism (Dark Side of the Moon) as a playlist to the NSA's tracking efforts, serving as an auditory reminder of how our online activities are surveilled.
 
 #Installing
-Double click on the darksideoftheprism.xpi file and it should install on your Firefox browser. 
+1. Open Firefox
+2. Go to Tools -> Add-ons
+3. Click the Settings icon
+4. Select Install Add-on from file...
+5. Choose darksideoftheprism.xpi
 
 #Use
 When visiting any URLs that have been (publicly) targeted by Prism, a small notification will appear alerting that this site is being surveilled. You will then be presented with an ethereal Pink Floyd track from the "Dark Side of the Moon" album.
