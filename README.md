@@ -1,5 +1,9 @@
 ![img](http://www.justinblinder.com/images/prismlogo.jpg)
 
+Justin Blinder
+www.justinblinder.com
+@justinblinder
+
 A **Firefox Add-on** that provides a soundtrack for our surveilled internet meanderings.
 
 "Dark Side of the Prism" uses Pink Floyd's aural prism (Dark Side of the Moon) as a playlist to the NSA's tracking efforts, serving as an auditory reminder of how our online activities are surveilled.
