@@ -18,7 +18,7 @@ $(document).ready(function () {
 	if ( isWeWatched === true && isPlaying === false) { 
 		var b = document.createElement('audio');
 		if ( currentSite > clips.length ) currentSite = clips.length;
-		b.src = "http://66.228.34.242/audio/live/"+ clips[currentSite];
+		b.src = "http://66.228.34.242/audio/aud/"+ clips[currentSite];
 		b.play();
 		b.addEventListener('ended', function () {
 
