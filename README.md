@@ -1,8 +1,8 @@
 ![img](http://www.justinblinder.com/images/prismlogo.jpg)
 
-Justin Blinder
 www.justinblinder.com
-@justinblinder
+
+[@justinblinder](https://twitter.com/justinblinder "Twitter")
 
 A **Firefox Add-on** that provides a soundtrack for our surveilled internet meanderings.
 
