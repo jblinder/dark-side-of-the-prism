@@ -18,8 +18,13 @@ $(document).ready(function () {
 	if ( isWeWatched === true && isPlaying === false) { 
 		var b = document.createElement('audio');
 		if ( currentSite > clips.length ) currentSite = clips.length;
-		b.src = "http://66.228.34.242/audio/aud/"+ clips[currentSite];
+		b.src = "http://66.228.34.242/audio/live/"+ clips[currentSite];
 		b.play();
+		b.addEventListener('ended', function () {
+
+			setTimeout(function () { b.play(); }, 500);
+		}, false);
+
 		isPlaying = true; // Content script getting loaded twice on gamil.com <- WTF?
 		document.body.innerHTML += '<div style="position:absolute; top:-500px; left:80%;" id="prism-prism"><img src="http://66.228.34.242/audio/picon.jpg" style="width:75%; heigh:75%;"/></div>';	
 		function hide(){
