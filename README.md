@@ -16,7 +16,9 @@ A **Firefox Add-on** that provides a soundtrack for our surveilled internet mean
 5. Choose darksideoftheprism_midi.xpi or darksideoftheprism_live.xpi in the add-ons folder.
 
 #Use
-When visiting any URLs that have been (publicly) targeted by Prism, a small notification will appear alerting that this site is being surveilled. You will then be presented with an ethereal Pink Floyd track from the "Dark Side of the Moon" album.
+When visiting any URLs that have been (publicly) targeted by Prism, a small notification will appear alerting that this site is being surveilled. You will then be presented with an ethereal Pink Floyd track from the "Dark Side of the Moon" album. 
+
+To mute/unmute the music, press the widget button at the bottom right hand corner of the browser.
 
 #Versions
 There are two versions, a Midi and Live version. The Live version plays samples from songs and loops them after about a minute.
