@@ -6,6 +6,12 @@ $(document).ready(function () {
 	var currentSite = 0;
 	var isWeWatched = false;
 	var prismPlayer;
+
+	var isInIFrame = (window.location != window.parent.location);
+	if ( isInIFrame ) {
+		throw '';
+	}
+
 	for (var i = 0; i < prismSitez.length; i++) {
   		if(window.location.host.indexOf(prismSitez[i]) > -1) {
   			console.log("sitecheck: " + window.location.host);
@@ -29,15 +35,16 @@ $(document).ready(function () {
 			isPlaying = true; // Content script getting loaded twice on gamil.com <- WTF?
 		}
 	}
-	document.body.innerHTML += '<div style="position:absolute; top:-500px; left:80%;" id="prism-prism"><img src="http://66.228.34.242/audio/picon.jpg" style="width:75%; heigh:75%;"/></div>';	
-	function hide(){
-		 $('#prism-prism').animate({ opacity: 0}, 6000);
+	if ( isWeWatched === true) {
+		document.body.innerHTML += '<div style="position:absolute; top:-500px; left:80%;" id="prism-prism"><img src="http://66.228.34.242/audio/picon.jpg" style="width:75%; heigh:75%;"/></div>';	
+		function hide(){
+			 $('#prism-prism').animate({ opacity: 0}, 6000);
+		}
+		setTimeout(function(){
+	 		$('#prism-prism').css('z-index', 9999); 
+			$('#prism-prism').animate({top: '10px'}, 1500, function(){ hide();});
+		}, 100);
 	}
-	setTimeout(function(){
- 		$('#prism-prism').css('z-index', 9999); 
-		$('#prism-prism').animate({top: '10px'}, 1500, function(){ hide();});
-	}, 100);
-
 	// Load script, determine whether to play audio
 	self.port.on("ready", function(bPlay) {
 		if (bPlay) {
