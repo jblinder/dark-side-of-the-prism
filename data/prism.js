@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var clips = ["darkside.ogg","brain.ogg","money.ogg", "breath.ogg", "eclipse.ogg", "gig.ogg", "ontherun.ogg","speaktome.ogg","time.ogg", "usandthem.ogg"];   
 	// Basic list of providers based on media coverage
-	var prismSitez = ["google.com", "gmail.com", "facebook.com", "bing.com", "yahoo.com", "aol.com","apple.com","skype.com", "microsoft.com", "youtube.com","hotmail.com"];
+	var prismSitez = [];
 	var isPlaying = false;	
 	var currentSite = 0;
 	var isWeWatched = false;
